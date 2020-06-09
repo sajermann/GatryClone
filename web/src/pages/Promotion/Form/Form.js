@@ -8,7 +8,7 @@ const PagesPromotionForm = () => {
   const { id } = useParams();
   return (
     <UIContainer>
-      <PromotionForm />
+      <PromotionForm id={id ? Number.parseInt(id, 10) : null} />
     </UIContainer>
   )
 }
